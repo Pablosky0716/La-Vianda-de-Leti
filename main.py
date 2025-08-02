@@ -11,6 +11,36 @@ PAGOS_PATH = "pagos.json"
 def cargar_config():
     return cargar_json(CONFIG_PATH)
 
+def mostrar_menu_principal():
+    while True:
+        print("\n🙋‍♀️ Hola! soy el Bot de La Vianda de Leti")
+        print("\n🍽️ Bienvenidos al Menú Principal")
+        print("1️⃣ Ver menú del día siguiente")
+        print("2️⃣ Realizar pedido")
+        print("3️⃣ Ver historial de pedidos")
+        print("4️⃣ Salir")
+
+        opcion = input("Seleccioná una opción: ").strip()
+
+        if opcion == "1":
+            dia_siguiente = obtener_dia_siguiente()
+            mostrar_menu(dia_siguiente)
+
+        elif opcion == "2":
+            nombre = input("Tu nombre: ")
+            opcion_pedido = input("Elegí opción (comun_1, comun_2, especial): ").strip()
+            registrar_pedido(nombre, opcion_pedido, menu_path=MENU_PATH, pedidos_path=PEDIDOS_PATH)
+
+        elif opcion == "3":
+            ver_historial(pedidos_path=PEDIDOS_PATH)
+
+        elif opcion == "4":
+            print("👋 ¡Gracias por usar La Vianda de Leti!")
+            break
+
+        else:
+            print("❗ Opción inválida. Intentá de nuevo.")    
+
 def obtener_dia_siguiente():
     dias = {
         0: "lunes",
@@ -69,36 +99,6 @@ def cargar_menu_dia(dia):
     guardar_json(MENU_PATH, menu)
     print(f"✅ Menú para {dia.capitalize()} guardado correctamente.")
     
-
-def mostrar_menu_principal():
-    while True:
-        print("\n🙋‍♀️ Hola! soy el Bot de La Vianda de Leti")
-        print("\n🍽️ Bienvenidos al Menú Principal")
-        print("1️⃣ Ver menú del día siguiente")
-        print("2️⃣ Realizar pedido")
-        print("3️⃣ Ver historial de pedidos")
-        print("4️⃣ Salir")
-
-        opcion = input("Seleccioná una opción: ").strip()
-
-        if opcion == "1":
-            dia_siguiente = obtener_dia_siguiente()
-            mostrar_menu(dia_siguiente)
-
-        elif opcion == "2":
-            nombre = input("Tu nombre: ")
-            opcion_pedido = input("Elegí opción (comun_1, comun_2, especial): ").strip()
-            registrar_pedido(nombre, opcion_pedido, menu_path=MENU_PATH, pedidos_path=PEDIDOS_PATH)
-
-        elif opcion == "3":
-            ver_historial(pedidos_path=PEDIDOS_PATH)
-
-        elif opcion == "4":
-            print("👋 ¡Gracias por usar La Vianda de Leti!")
-            break
-
-        else:
-            print("❗ Opción inválida. Intentá de nuevo.")    
 
 def main():
     registrar_pedido("Pablo", "especial", menu_path=MENU_PATH, pedidos_path=PEDIDOS_PATH)
