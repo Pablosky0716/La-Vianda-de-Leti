@@ -1,0 +1,14 @@
+{
+  "2025-08-03": {
+    "Ana": {
+      "opcion": "comun_2",
+      "plato": "Tarta de verdura",
+      "pagado": true
+    },
+    "Pablo": {
+      "opcion": "especial",
+      "plato": "Canelones de verdura",
+      "pagado": false
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "nombre_proyecto": "La Vianda de Leti",
+  "hora_envio_menu": "14:00",
+  "hora_limite_pedido": "17:00",
+  "admin_nombre": "Leti",
+  "dias_servicio": ["Lunes", "Martes", "Miércoles", "jueves", "Viernes", "Sábado"]
+}

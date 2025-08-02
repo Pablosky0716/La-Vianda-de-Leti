@@ -1,0 +1,33 @@
+{
+  "lunes": {
+    "comun_1": "Milanesa con puré",
+    "comun_2": "Tarta de verdura",
+    "especial": "Canelones de verdura"
+  },
+  "martes": {
+    "comun_1": "Pastel de papa",
+    "comun_2": "Ensalada de atún",
+    "especial": "Sorrentinos con crema"
+  },
+  "miercoles": {
+    "comun_1": "Pastel de papa",
+    "comun_2": "Ensalada de atún",
+    "especial": "Sorrentinos con crema"
+  },
+  "jueves": {
+    "comun_1": "Croquetas de Arroz",
+    "comun_2": "Panchos con pure",
+    "especial": "churrasco"
+  },
+  "viernes": { 
+    "comun_1": "Milanesa con puré",
+    "comun_2": "Ensalada de atún",
+    "especial": "Bondiola con Arroz"
+},
+ "sabado": {
+    "comun_1": "Pastel de carne",
+    "comun_2": "tartas ",
+    "especial": "empanadas"
+ }
+ 
+}
