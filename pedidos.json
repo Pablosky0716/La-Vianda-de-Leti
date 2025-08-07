@@ -10,5 +10,17 @@
       "plato": "Canelones de verdura",
       "pagado": false
     }
+  },
+  "2025-08-07": {
+    "Pablo": {
+      "opcion": "especial",
+      "plato": "Bondiola con Arroz",
+      "pagado": false
+    },
+    "Lala": {
+      "opcion": "comun_1",
+      "plato": "Milanesa con puré",
+      "pagado": false
+    }
   }
 }

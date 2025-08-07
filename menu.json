@@ -24,10 +24,9 @@
     "comun_2": "Ensalada de atún",
     "especial": "Bondiola con Arroz"
 },
- "sabado": {
+  "sabado": {
     "comun_1": "Pastel de carne",
     "comun_2": "tartas ",
     "especial": "empanadas"
- }
- 
+  }
 }
